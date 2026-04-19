@@ -1,0 +1,13 @@
+{
+  "name": "copilot-memory-compiler",
+  "description": "Automatically captures coding sessions and compiles them into a searchable personal knowledge base",
+  "version": "1.0.0",
+  "author": {
+    "name": "Adapted from coleam00/claude-memory-compiler"
+  },
+  "license": "MIT",
+  "keywords": ["memory", "knowledge-base", "sessions", "learning", "personal-kb"],
+  "agents": "agents/",
+  "skills": ["skills/"],
+  "hooks": "hooks.json"
+}

@@ -1,0 +1,24 @@
+{
+  "hooks": [
+    {
+      "event": "sessionStart",
+      "steps": [
+        {
+          "name": "inject-knowledge-context",
+          "description": "Load the knowledge base index into session context at startup",
+          "run": "scripts/session-start.sh"
+        }
+      ]
+    },
+    {
+      "event": "sessionEnd",
+      "steps": [
+        {
+          "name": "flush-session-knowledge",
+          "description": "Extract and save knowledge from the ending session",
+          "run": "scripts/session-end.sh"
+        }
+      ]
+    }
+  ]
+}
